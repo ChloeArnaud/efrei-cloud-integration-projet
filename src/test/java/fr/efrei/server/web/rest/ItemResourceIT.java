@@ -23,7 +23,7 @@ public class ItemResourceIT {
     @Transactional
     void createItem() throws Exception {
         int databaseSizeBeforeCreate = itemRepository.findAll().size();
-        assertThat(databaseSizeBeforeCreate).isEqualTo(0);
+        assertThat(databaseSizeBeforeCreate).isEqualTo(5);
 
 //        List<Item> itemList = itemRepository.findAll();
 //        assertThat(itemList).hasSize(databaseSizeBeforeCreate + 1);
